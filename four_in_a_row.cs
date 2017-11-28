@@ -6,7 +6,7 @@ using System;
 class FourInARow{
 	static void Main(string[] args){
 
-		Console.Write("Enter a postive integer: ");
+		//Console.Write("Enter a postive integer: ");
 
 		//int number  = int.Parse(Console.ReadLine());
 
@@ -27,10 +27,13 @@ class FourInARow{
 		int biggest_middle = smallest_middle+1;
 		int last_number = smallest_middle+2;
 
-		if (first_number+smallest_middle+biggest_middle+last_number == number){
+		/*if (first_number+smallest_middle+biggest_middle+last_number == number){
 			return true;
 		}else{
 			return false;
-		}
+		}*/
+
+		//using ternary if
+		number = first_number+smallest_middle+biggest_middle+last_number ? true : false
 	}
 }
